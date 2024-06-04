@@ -34,8 +34,7 @@ func (q *Queue) Add(item any) {
 	}
 }
 
-
-func (q *Queue) Remove() (any) {
+func (q *Queue) Remove() any {
 	if q.IsEmpty() {
 		return nil
 	}
@@ -47,7 +46,7 @@ func (q *Queue) Remove() (any) {
 	return data
 }
 
-func (q *Queue) Peek() (any) {
+func (q *Queue) Peek() any {
 	if q.IsEmpty() {
 		return nil
 	}

@@ -25,7 +25,7 @@ func (n *Node) DeleteNode(d any) *Node {
 	if n.data == d {
 		return head.next
 	}
-	for n != nil && n.next !=nil{
+	for n != nil && n.next != nil {
 		if n.next.data == d {
 			n.next = n.next.next
 		}

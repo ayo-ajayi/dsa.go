@@ -5,7 +5,6 @@ import (
 	"fmt"
 )
 
-
 // given a sorted (increasing order) array, create binary search tree with minmal height
 func MinimalTree(sortedArr []int) *BinaryTreeNode {
 	return minimalTree(sortedArr, 0, len(sortedArr)-1)

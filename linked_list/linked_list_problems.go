@@ -35,7 +35,3 @@ func (n *Node) KthToLast(k int) any {
 	}
 	return 0
 }
-
-
-
-

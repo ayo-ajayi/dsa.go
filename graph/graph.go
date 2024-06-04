@@ -4,8 +4,6 @@ import (
 	"github.com/ayo-ajayi/dsa.go/queue"
 )
 
-
-
 type Node struct {
 	data     any
 	adjacent []*Node
@@ -17,7 +15,7 @@ func NewNode(data any) *Node {
 	}
 }
 
-//set node both ways for adjacency matrix and set node once with adjacency list
+// set node both ways for adjacency matrix and set node once with adjacency list
 func (n *Node) SetAdjacent(nodes []*Node) {
 	n.adjacent = nodes
 }

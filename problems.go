@@ -2,9 +2,8 @@
 package main
 
 import (
-	"math"
 	"github.com/ayo-ajayi/dsa.go/stack"
-
+	"math"
 )
 
 type ListNode struct {
@@ -219,7 +218,6 @@ func threeSum(nums []int) [][]int {
 
 }
 
-
 func swapPairs(head *ListNode) *ListNode {
 
 	if head == nil || head.Next == nil {
@@ -241,7 +239,6 @@ func swapPairs(head *ListNode) *ListNode {
 	}
 	return dummy.Next
 }
-
 
 func exist(board [][]byte, word string) bool {
 	if len(word) == 0 {
@@ -269,7 +266,6 @@ func exist(board [][]byte, word string) bool {
 	return false
 }
 
-
 func insertNodeAtPosition(llist *ListNode, data int, position int) *ListNode {
 	newNode := &ListNode{Val: data}
 
@@ -290,7 +286,6 @@ func insertNodeAtPosition(llist *ListNode, data int, position int) *ListNode {
 
 	return llist
 }
-
 
 func isBalanced(s string) string {
 	if len(s) == 0 {
@@ -320,9 +315,6 @@ func isBalanced(s string) string {
 		return "NO"
 	}
 }
-
-
-
 
 func SolveBoxes(clawPos int, boxes []int, boxInClaw bool) string {
 	totalBoxes := 0

@@ -25,7 +25,6 @@ func (s *Stack) Pop() any {
 	return item
 }
 
-
 func (s *Stack) Push(item any) {
 	newtop := NewStackNode(item)
 	newtop.next = s.top
@@ -42,7 +41,6 @@ func (s *Stack) Peek() any {
 func (s *Stack) IsEmpty() bool {
 	return s.top == nil
 }
-
 
 // only works with int
 func (s *Stack) Min() any {
